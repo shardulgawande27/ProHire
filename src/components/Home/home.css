@@ -1,0 +1,126 @@
+.home {
+    text-align: center;
+    align-items: center;
+    /* background-image: url(../../assets/home_bg.png) ; */
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+/* Adjust the transparency of the background image */
+.home::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-image: url(../../assets/home_bg.png);
+    opacity: 0.5;
+    /* Change this value to adjust transparency (0 to 1) */
+    z-index: -1;
+
+}
+
+.home__title {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+
+.home__para {
+    width: 40%;
+    margin: 1.8rem auto;
+    font-size: 1.3rem;
+
+}
+
+.home__para b {
+    background-color: yellow;
+}
+
+.home .h__btn {
+    padding: 1rem 2rem;
+    /* border: 1px solid black; */
+    text-decoration: none;
+    border-radius: .5rem;
+    background-color: #00775A;
+    color: #fff;
+}
+
+
+.home .btn {
+    margin-top: 6rem;
+}
+
+.card__section {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    /* column-gap: 1rem; */
+}
+
+.card .card__img img {
+    width: 80%;
+}
+
+.card__img {
+    height: 80px;
+    width: 80px;
+    padding: 9px 1px;
+    border-radius: 50%;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    border: transparent;
+    /* transition: .5s ease-in-out; */
+
+}
+
+.card__img:hover {
+    border: 1.5px solid #00775A;
+    transition: .3s ease-in-out;
+
+}
+
+.card {
+    text-align: center;
+    width: 20%;
+}
+
+.card__content {
+    text-align: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.card__content p {
+    width: 81%;
+    margin: 1rem auto;
+    font-size: .91rem;
+}
+
+@media screen and (max-width:769px) {
+    .home{
+        padding-top: 10rem
+    }
+    .home__para{
+        width: 80%;
+    }
+
+    .home__title {
+        margin-top: -2rem;
+    }
+
+    .card__content p{
+        display: none;
+    }
+
+    .home .btn {
+        margin-top: 4rem;
+    }
+
+    .card__section {
+        column-gap: 3rem;
+    }
+
+}
